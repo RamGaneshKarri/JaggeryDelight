@@ -13,7 +13,8 @@ export default function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:3000/register', { name, email, password })
+      .post('https://jaggery-delight-bfh7.vercel.app
+/register', { name, email, password })
       .then((result) => {
         console.log(result);
         navigate('/login');
