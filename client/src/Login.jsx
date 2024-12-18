@@ -13,7 +13,8 @@ export default function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000/login", { email, password })
+      .post("jaggery-delight-bfh7.vercel.app
+", { email, password })
       .then((result) => {
         if (result.data === "Success") {
           navigate("/home");
